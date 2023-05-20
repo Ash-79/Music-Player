@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://kit.fontawesome.com/9cac8dc230.js" crossorigin="anonymous"></script>
+    <title>Akash's Music Player</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="home-link">
+            <a href="#">
+                <div id="home-logo">
+                    <img src="Resources/logo2.png" alt="Home">
+                </div>
+                <div id="home-text">
+                    <h2>Music <br> Player</h2>
+                </div>
+            </a>
+        </div>
+        <div id="favourite">
+            Favourite
+        </div>
+        <div id="search-button">
+            <i class="fa-solid fa-magnifying-glass search-icon" style="color: #ffffff;"></i>
+            <input type="text" name="Search-text" placeholder="Search">
+            <i class="fa-solid fa-microphone micro-icon" style="color: #ffffff;"></i>
+        </div>
+        <div id="notification">
+            <i class="fa-solid fa-bell fa-lg" style="color: #ffffff;"></i>
+        </div>
+        <div id="user">
+            <img src="Resources/myimg1.jpg" alt="Akash" id="profile-pic">
+        </div>
+    </nav>
+    <main id="main-container">
+        <aside id="left-aside">
+            <section class="heading">
+                <div class="heading-item">
+                    <img src="Resources/crousel/carousel1.jpg" alt="img">
+                </div>
+
+                <div class="heading-item">
+                    <img src="Resources/crousel/carousel2.jpg" alt="img">
+                </div>
+
+                <div class="heading-item">
+                    <img src="Resources/crousel/carousel3.jpg" alt="img">
+                </div>
+            </section>
+
+            <section id="latest-release">
+                <h1 class="lr-heading">Latest Release</h1>
+                <div class="lr-container">
+                    <div class="lr-item">
+                        <div class="lr-item-imgdiv">
+                            <img src="Resources/songs/DaBaby.jpg">
+                            <div class="play-on-hover">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="lr-item-detail">
+                            <h4>DaBaby</h4>
+                            <p>Aug, 2023</p>
+                        </div>
+                        <div class="lr-item-extra">
+                            <div
+                                <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #ffffff;"></i>
+                            </div>
+                            <p>3.20</p>
+                        </div>
+                    </div>
+
+                    <div class="lr-item">
+                        <div class="lr-item-imgdiv">
+                            <img src="Resources/songs/dynamite.jpg">
+                            <div class="play-on-hover">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="lr-item-detail">
+                            <h4>DynaMite</h4>
+                            <p>Aug, 2023</p>
+                        </div>
+                        <div class="lr-item-extra">
+                            <div
+                                <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #ffffff;"></i>
+                            </div>
+                            <p>3.20</p>
+                        </div>
+                    </div>
+
+                    <div class="lr-item">
+                        <div class="lr-item-imgdiv">
+                            <img src="Resources/songs/falling.jpg">
+                            <div class="play-on-hover">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="lr-item-detail">
+                            <h4>Falling</h4>
+                            <p>Aug, 2023</p>
+                        </div>
+                        <div class="lr-item-extra">
+                            <div
+                                <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #ffffff;"></i>
+                            </div>
+                            <p>3.20</p>
+                        </div>
+                    </div>
+
+                    <div class="lr-item">
+                        <div class="lr-item-imgdiv">
+                            <img src="Resources/songs/havana.jpg">
+                            <div class="play-on-hover">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="lr-item-detail">
+                            <h4>Havana</h4>
+                            <p>Aug, 2023</p>
+                        </div>
+                        <div class="lr-item-extra">
+                            <div
+                                <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #ffffff;"></i>
+                            </div>
+                            <p>3.20</p>
+                        </div>
+                    </div>
+
+                    <div class="lr-item">
+                        <div class="lr-item-imgdiv">
+                            <img src="Resources/songs/shit.png">
+                            <div class="play-on-hover">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="lr-item-detail">
+                            <h4>Shit</h4>
+                            <p>Aug, 2023</p>
+                        </div>
+                        <div class="lr-item-extra">
+                            <div
+                                <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #ffffff;"></i>
+                            </div>
+                            <p>3.20</p>
+                        </div>
+                    </div>
+
+                    <div class="lr-item">
+                        <div class="lr-item-imgdiv">
+                            <img src="Resources/songs/sorry.jpg">
+                            <div class="play-on-hover">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <div class="lr-item-detail">
+                            <h4>Sorry</h4>
+                            <p>Aug, 2023</p>
+                        </div>
+                        <div class="lr-item-extra">
+                            <div
+                                <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #ffffff;"></i>
+                            </div>
+                            <p>3.20</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section id="popular-artist">
+                <h1 class="lr-heading">Popular Artists</h1>
+                <div class="pa-container">
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/adele.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Adele </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/billie eilish.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Billie Eilish </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/bruno mars.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p>Bruno Mars</p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/Camila Cabello.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Camila Cabello </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/drake.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Drake </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/ed sheeran.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Ed Sheeran </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/eminem.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Eminem </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/Katy perry.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Katy perry </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/nicki minaj.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Nicki Minaj </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/posty.png">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> Posty </p>
+                    </div>
+
+                    <div class="pa-item">
+                        <div class="pa-item-img">
+                            <img src="Resources/popular artists/sixnine.jpg">
+                            <div class="play-on-hover" style="border-radius: 62%;">
+                                <i class="fa-solid fa-play fa-xl"></i>
+                            </div>
+                        </div>
+                        <p> SixNine </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="genre1">
+                <div class="stations">
+                    <div id="div1">
+                        <div id="div2">
+                            <div id="div3">
+                                <img src="Resources/website_logo.png">
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="genre1-container">
+                    <div class="g1-item">
+                        <img src="Resources/music themes/chill.jpg">
+                        <h1> Chill </h1>
+                    </div>
+
+                    <div class="g1-item">
+                        <img src="Resources/music themes/love.jpg">
+                        <h1> Love </h1>
+                    </div>
+
+                    <div class="g1-item">
+                        <img src="Resources/music themes/pop.jpg">
+                        <h1> Pop </h1>
+                    </div>
+
+                    <div class="g1-item">
+                        <img src="Resources/music themes/retro.jpg">
+                        <h1> Retro </h1>
+                    </div>
+
+                    <div class="g1-item">
+                        <img src="Resources/music themes/rock.jpg">
+                        <h1> Rock </h1>
+                    </div>
+
+                    <div class="g1-item">
+                        <img src="Resources/music themes/workout.jpg">
+                        <h1> Gym </h1>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="genre2">
+                    <div class="g2-outer-div">
+                        <div style="background-image: url(Resources/genre2/electronic.jpg);" class="g2-inner-div">
+                            <span>Electronic</span>
+                        </div>
+                    </div>
+
+                    <div class="g2-outer-div">
+                        <div style="background-image: url(Resources/genre2/party.jpg);" 
+                        class="g2-inner-div">
+                            <span>party</span>
+                        </div>
+                    </div>
+
+                    <div class="g2-outer-div">
+                        <div style="background-image: url(Resources/genre2//road.jpg);" 
+                        class="g2-inner-div">
+                            <span>Road</span>
+                        </div>
+                    </div>
+            </section>
+            
+            <section id="english">
+                <h1 class="lr-heading">Latest English</h1>
+                <div class="english-container">
+                    <div class="e-item">
+                        <img src="Resources/latest english/I'll Wait.jpg">
+                        <h4 style="margin: 0px;"> I'll Wait </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest english/ily.jpg">
+                        <h4 style="margin: 0px;"> ILY </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest english/let me go.jpg">
+                        <h4 style="margin: 0px;"> Let Me Go </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest english/qurantine clean.jpg">
+                        <h4 style="margin: 0px;"> Quarentine Clean </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest english/toosie slide.jpg">
+                        <h4 style="margin: 0px;"> Tooside Slide </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest english/uptown funk.png">
+                        <h4 style="margin: 0px;"> Uptown Flunk </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="hindi" style="margin-top:50px;">
+                <h1 class="lr-heading">Latest Hindi</h1>
+                <div class="english-container">
+                    <div class="e-item">
+                        <img src="Resources/latest hindi/baarish.jpeg">
+                        <h4 style="margin: 0px;"> Baarish </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest hindi/galiyaan.jpg">
+                        <h4 style="margin: 0px;"> Galiyaan </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest hindi/giveme some sunshine.jpg">
+                        <h4 style="margin: 0px;"> Give Me Some Sunshine </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest hindi/kaun tujhe.jpg">
+                        <h4 style="margin: 0px;"> Kaun Tujhe </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest hindi/tera ban jaunga.jpg">
+                        <h4 style="margin: 0px;"> Tera Ban Jaunga </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+
+                    <div class="e-item">
+                        <img src="Resources/latest hindi/tere sang yara.jpg">
+                        <h4 style="margin: 0px;"> Tere Sang Yara </h1>
+                        <p style="margin: 0px;"> Aug 18, 2023</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        
+        <aside id="playlist">
+            <div>
+                <div id="playlist-heading">
+                    <h2>Playlist</h2>
+                    <h4>
+                        <a href="">
+                            Queue
+                            <i class="fa-solid fa-circle-chevron-down fa-sm" style="color: #ffffff;"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="playlist-content">
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">01</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>After Hours</h4>
+                                <p>The Weeknd</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">02</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Mirage</h4>
+                                <p>Else</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">03</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Worry Bout Us</h4>
+                                <p>Losie Love</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">04</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>New Skin</h4>
+                                <p>Flume</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">05</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Better Now</h4>
+                                <p>Post Malone</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">06</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Alone Again</h4>
+                                <p>The Weeknd</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">07</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Bad Guy</h4>
+                                <p>Billie Elish</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">07</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Bad Guy</h4>
+                                <p>Billie Elish</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">07</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Bad Guy</h4>
+                                <p>Billie Elish</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">07</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Bad Guy</h4>
+                                <p>Billie Elish</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">07</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Bad Guy</h4>
+                                <p>Billie Elish</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="p-item-left">
+                            <div style="margin-right: 3px;">07</div>
+                            <div class="p-item-image">
+                                <img src="Resources/playlist/after.jpg">
+
+                            </div>
+                            <div class="p-item-detail">
+                                <h4>Bad Guy</h4>
+                                <p>Billie Elish</p>
+                            </div>
+                        </div>
+                        <div class="p-item-right">
+                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
